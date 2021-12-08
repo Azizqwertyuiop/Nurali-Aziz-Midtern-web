@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 245, 245);
+  }
+  
+  .navbar {
+    overflow: visible;
+    background-color: rgb(36, 32, 32);
+    position: fixed;
+    top: 0;
+    margin-left: -8px;
+    width: 100vw;
+    height: 70px;
+    
+  }
+  
+  .navbar a {
+    float: none;
+    display: inline-block;
+    color: #cecccc;
+    text-align: center;
+   padding: 25px 2px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 60px;
+   
+  }
+  
+  .navbar a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 18%;
+    height: 1200px; /* only for demonstration, should be removed */
+    background: rgb(255, 255, 255);
+    padding: 50px;
+    margin-left: 110px;
+    border: 1px#dededc solid;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul  {
+    list-style-type: none;
+    padding: 10px;
+    color: wheat;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    
+    
+    
+  }
+  nav li{
+    margin-bottom: 17px;
+    margin-left: 3px;
+
+  }
+  nav a{
+    text-decoration: none;
+    color: black;  
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 66%;
+    background-color: rgb(255, 255, 255);
+    height: 1200px; /* only for demonstration, should be removed */
+    margin-right: 55px;
+   
+
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+.img1{
+    float: left;
+    display: block;
+    margin-left: 170px;  
+    margin-top: 15px;
+}
+.img2{
+    height: 90px;
+}
+.d5 {
+    background-color: rgb(255, 255, 255);
+    width: 320px;
+    height: 35px;
+    border: 1px;
+    border-radius: 5px ;
+    margin-left: 15px;
+ 
+}
+.aza{
+color: white;
+margin-left: 100px;
+
+}
+.videofon{
+  
+width: 900px;
+max-height: 450px;
+
+border: 1px;
+    border-radius: 7px ;
+margin-left: 25px;
+
+margin-top: 75px;
+
+}
+
+.imageContainer{
+    width: 300px;
+
+   color: yellow;
+}
+
+
