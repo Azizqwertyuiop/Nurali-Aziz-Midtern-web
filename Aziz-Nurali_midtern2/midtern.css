@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 245, 245);
+  }
+  
+  .navbar {
+    overflow: visible;
+    background-color: rgb(36, 32, 32);
+    position: fixed;
+    top: 0;
+    margin-left: -8px;
+    width: 100vw;
+    height: 70px;
+    
+  }
+  
+  .navbar a {
+    float: none;
+    display: inline-block;
+    color: #cecccc;
+    text-align: center;
+   padding: 25px 2px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 60px;
+   
+  }
+  
+  .navbar a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+ 
+  nav {
+    float: left;
+    width: 18%;
+    height: 1200px; 
+    background: rgb(255, 255, 255);
+    padding: 50px;
+    margin-left: 110px;
+    border: 1px#dededc solid;
+  }
+  
+ 
+  nav ul  {
+    list-style-type: none;
+    padding: 10px;
+    color: wheat;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    
+    
+    
+  }
+  nav li{
+    margin-bottom: 17px;
+    margin-left: 3px;
+
+  }
+  nav a{
+    text-decoration: none;
+    color: black;  
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 66%;
+    background-color: rgb(255, 255, 255);
+    height: 1200px; 
+    margin-right: 55px;
+   
+
+  }
+  
+
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+ 
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+.img1{
+    float: left;
+    display: block;
+    margin-left: 170px;  
+    margin-top: 15px;
+}
+.img2{
+    height: 90px;
+}
+.d5 {
+    background-color: rgb(255, 255, 255);
+    width: 320px;
+    height: 35px;
+    border: 1px;
+    border-radius: 5px ;
+    margin-left: 15px;
+ 
+}
+.aza{
+color: white;
+margin-left: 100px;
+
+}
+.videofon{
+  
+width: 900px;
+max-height: 450px;
+
+border: 1px;
+    border-radius: 7px ;
+margin-left: 25px;
+
+margin-top: 75px;
+
+}
+
+.imageContainer{
+    width: 300px;
+
+   color: yellow;
+}
+
+
+
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+h1{
+  text-align: center;
+  color: black;
+}
+.invisible {
+  opacity: 0;
+}
+
+#container_Lv0 {
+  position: relative;
+  width: 35em;
+  margin: 0 auto;
+  border: 3px solid black;
+  overflow: hidden;
+  border-radius: 1em;
+}
+#container_Lv1 {
+  display: flex;
+  min-width: fit-content;
+}
+  .container_Lv2 {
+      position: relative;
+      height: 30em;
+      width: 35em;
+      background-color: rgba(0, 0, 0, 0.707)
+  }
+  .container_Lv2 img{
+      user-select: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(calc(-50%)) translatey(calc(-50%));
+      max-height: 30em;
+      max-width: 35em;
+  }
+
+#next_Btn_div {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(calc(-50%));
+  background-color: white;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  border-radius: 2em;
+  transition: opacity 0.3s ease-in-out;
+}
+  #next_Btn_div svg{
+      transform: translateX(0.1em) translateY(0.1em);
+  }
+  #next_Btn_div:active {
+      transform: translateY(calc(-50%)) scale(0.9);
+      box-shadow: 1px 1px 2px black;
+  }
+#prev_Btn_div {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(calc(-50%));
+  background-color: white;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  border-radius: 2em;
+  transition: opacity 0.3s ease-in-out;
+}
+  #prev_Btn_div svg{
+      transform: translateX(-0.1em) translateY(0.1em);
+  }
+  #prev_Btn_div:active {
+      transform: translateY(calc(-50%)) scale(0.9);
+      box-shadow: 1px 1px 2px black;
+  }
+
+#radio_Btns_container {
+  position:absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 80%;
+  transition: opacity 0.3s ease-in-out;
+}
+.radio_Btn_div {
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  cursor: pointer;
+}

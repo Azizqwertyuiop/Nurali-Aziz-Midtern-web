@@ -1,0 +1,270 @@
+body {
+    --color-primary: #000000;
+    --color-primary-dark: #ff8800;
+    --color-secondary: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    
+    margin-top: 20px;
+    background-size: cover;
+}
+
+
+.container {
+    width: 300px;
+    height: 500px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border: 1px black;
+    border-radius: 20px;
+    background: #ffffff;
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: container 3s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 1s;   /* Задержка перед началом */
+    }
+
+    @keyframes container{
+        0%{
+        opacity:0;
+        }
+        100% {
+        opacity:1;
+        }
+        }
+    
+
+
+
+.container,
+.form__input,
+.form__button {
+    font: 500 1rem 'Quicksand', sans-serif;
+ 
+    
+}
+
+.form--hidden {
+    display: none;
+  
+}
+
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form__title {
+
+margin-top: -5px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 100;
+font-size: 18px;
+line-height: 20px
+}
+
+.formname{
+
+    font-family: Poppins;
+    color: rgb(116, 116, 116);
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+margin-top: 10px;
+
+}
+
+.form-check-input{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+
+
+}
+.welkom{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 37px;
+
+}
+
+
+.welkom1{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 37px;
+position: absolute;
+
+}
+
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success {
+    color: var(--color-success);
+}
+
+.form__message--error {
+    color: var(--color-error);
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color: var(--color-primary);
+    background: #ffffff;
+}
+
+.form__input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form__button {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
+    border: 1px;
+    border-radius: 9px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(255, 196, 0);
+}
+.form__button1 {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 9px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+.form__button:hover {
+    background: var(--color-primary-dark);
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 155px;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .fab {
+    position: absolute;
+    width: 56px;
+    left: 41%;
+    bottom: 25px;
+    margin-left: -28px;
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: container 3s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 1s; /* Задержка перед началом */
+    }
+
+    @keyframes container{
+        0%{
+        opacity:0;
+        }
+        100% {
+        opacity:1;
+        }
+        }
+
+  
+  
+        img.background {
+            min-height: 100%;
+            min-width: 640px;
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+          
+            /* Зависит от размера изображения */
+            @media screen and (max-width: 640px){
+              img.bg {
+                left: 50%;
+                margin-left: -320px;
+              }
+            }
+          }
+
+          .yandex {
+              width: 60px;
+              margin-left: 118px;
+          }
