@@ -1,5 +1,5 @@
 var images_container_Lv_minus1 = document.getElementById('container_Lv_minus1');
-//The conatiner level 0 which contains the image slider...
+
 var images_container_Lv0 = document.getElementById('container_Lv0');
 
 
@@ -41,18 +41,18 @@ function Make_Img_Slider(array_of_images) {
     images_container_Lv0.classList.remove('hidden');
     images_container_Lv_minus1.classList.remove('hidden');
 
-    //Counter to make the image slider move... Starts at 1 so that the first image shown is not the clone one...
+   
     let counter = 1; 
 
 
-    //Placing the last image's clone at starting to smoothen out the transition....
+    
     let container_Lv2 = document.createElement('div');
     container_Lv2.classList.add('container_Lv2');
     images_container_Lv1.appendChild(container_Lv2);
     let image_temp = new Image();
     image_temp.src = images_array[images_array.length-1];
     container_Lv2.appendChild(image_temp);
-    //Placing all the other images...
+   
     for (let i = 0; i < images_array.length; i++) {
 
         let image_temp = new Image();
@@ -62,7 +62,7 @@ function Make_Img_Slider(array_of_images) {
         images_container_Lv1.appendChild(container_Lv2);
         container_Lv2.appendChild(image_temp);
     }
-    //Placing the first image's clone at last to smoothen out the transition....
+    
     let container_Lv2_2 = document.createElement('div');
     container_Lv2_2.classList.add('container_Lv2');
     images_container_Lv1.appendChild(container_Lv2_2);
@@ -72,7 +72,7 @@ function Make_Img_Slider(array_of_images) {
 
 
 
-    //Making radio buttons numbers and styling
+   
     radio_Btns_container.classList.add('invisible');
     for (let i = 0; i < images_array.length; i++) {
         
@@ -83,7 +83,7 @@ function Make_Img_Slider(array_of_images) {
         radio_Btns_container.appendChild(radio_Btn_div);
     }
     images_container_Lv1.style.transform = 'translateX(-' + (35*counter) + 'em)'
-    //Slecting the radio buttons with class radio_Btn with query selector all so that I can make their color diff with indexing...
+ 
     var radio_Btn_es = document.querySelectorAll('.radio_Btn'); 
     radio_Btn_es[0].style.fill = 'tomato';
 }
